@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='UTF-8' />
+		<title>slider</title>
+	</head>
+	<style>
+		.para{
+		color: blue;
+		text-align: center;
+		height: 20px;
+		font-size: xx-large;-large;	
+		}
+		.slider{
+			width: 1000px;
+			overflow: hidden;
+			margin:  150px auto;
+		}
+		.slide {
+			float: left; 
+		}
+		.slides{
+			width:  calc(500px * 3);
+			animation: glisse 10s infinite;
+		}
+
+		@keyframes glisse {
+			0%{
+				transform: translateX(0);
+			}
+			33%{
+				transform: translateX(-500px);
+			}
+			33%{
+				transform: translateX(-500px);
+			}
+			66%{
+				transform: translateX(-1000px);
+			}
+			66%{
+				transform: translateX(-1000px);
+			}
+			100%{
+				transform: translateX(0);
+			}
+		}
+	</style>
+	<body>
+		<p class='para'>Bonjour test zfaaizhf</p>
+		<div class='slider'>
+			<div class='slides'>
+				<div class="slide first"><img src='image/1.jpg' alt=''></div>
+            	<div class='slide'><img src='image/2.jpg' alt=''></div>
+            	<div class='slide'><img src='image/3.jpg' alt=''></div>
+            </div>
+		</div>
+
+
+
+
+
+	</body>
+</html>
